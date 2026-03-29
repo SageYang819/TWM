@@ -3,4 +3,27 @@ Name: time-with-mom
 Version: 0.1.0
 Summary: Monte Carlo simulation for long-term family time
 Author: Sijie Yang
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
 Requires-Dist: numpy
+
+# Time with Mom Simulator
+
+A Monte Carlo-based simulation tool to model long-term family time under uncertainty.
+
+## Features
+- Aging decay modeling
+- Stochastic visit frequency
+- Multi-phase life modeling (abroad vs domestic)
+
+## Installation
+
+pip install -e .
+
+## Usage
+
+from time_with_mom import simulate
+
+## Demo
+
+streamlit run app/streamlit_app.py

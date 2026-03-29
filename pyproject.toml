@@ -3,8 +3,16 @@ name = "time-with-mom"
 version = "0.1.0"
 description = "Monte Carlo simulation for long-term family time"
 authors = [{name="Sijie Yang"}]
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = ["numpy"]
 
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+time-with-mom = "time_with_mom.cli:main"

@@ -1,0 +1,2 @@
+[console_scripts]
+time-with-mom = time_with_mom.cli:main
